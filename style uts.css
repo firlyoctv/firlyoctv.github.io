@@ -50,7 +50,7 @@ header ul li a:hover{
 }
 .banner{
 	height: 80vh;
-	background-image: url('images/bgr.png');
+	background-image: url('Images/bgr.png');
 	background-size: 150%;
 	position: relative;
 	display: flex;
@@ -73,7 +73,7 @@ header ul li a:hover{
 }
 .pantai{
 	height: 80vh;
-	background-image: url('images/pic.jpg');
+	background-image: url('Images/pic.jpg');
 	background-size: cover;
 	justify-content: center;
 	align-items: center;
@@ -90,7 +90,7 @@ header ul li a:hover{
 }
 .candi{
 	height: 80vh;
-	background-image: url('images/pic.jpg');
+	background-image: url('Images/pic.jpg');
 	background-size: cover;
 	justify-content: center;
 	align-items: center;
@@ -107,7 +107,7 @@ header ul li a:hover{
 }
 .krb{
 	height: 80vh;
-	background-image: url('images/pic.jpg');
+	background-image: url('Images/pic.jpg');
 	background-size: cover;
 	justify-content: center;
 	align-items: center;
