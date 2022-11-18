@@ -1,0 +1,352 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: tahoma;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.medsos{
+	padding: 5px;
+	background-color: mediumpurple;
+}
+.medsos ul li{
+	display: inline-block;
+	color: white;
+	margin-right: 10px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header h1{
+	float: left;
+	padding: 15px;
+	color: mediumpurple;
+}
+header ul{
+	float: right;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a{
+	padding: 25px 20px;
+	display: inline-block;
+}
+header ul li a:hover{
+	background-color: pink;
+	color: mediumblue ;
+}
+.active{
+	background-color: pink;
+	color: mediumblue;
+}
+.banner{
+	height: 80vh;
+	background-image: url('images/bgr.png');
+	background-size: 150%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner after{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.banner h2{
+	color: navy;
+	padding: 20px 25px;
+	border: 3px solid;
+}
+.pantai{
+	height: 80vh;
+	background-image: url('images/pic.jpg');
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+.pantai p{
+	font-family: tahoma;
+	font-size: 120%;
+	color: navy;
+	padding: 20px 25px;
+	border: 3px solid;
+	line-height: 1.5;
+	margin: 10px;
+	background-color: lightpink;
+}
+.candi{
+	height: 80vh;
+	background-image: url('images/pic.jpg');
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+.candi p{
+	font-family: tahoma;
+	font-size: 120%;
+	color: navy;
+	padding: 20px 25px;
+	border: 3px solid;
+	line-height: 1.5;
+	margin: 10px;
+	background-color: lightpink;
+}
+.krb{
+	height: 80vh;
+	background-image: url('images/pic.jpg');
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+.krb p{
+	font-family: tahoma;
+	font-size: 120%;
+	color: navy;
+	padding: 20px 25px;
+	border: 3px solid;
+	line-height: 1.5;
+	margin: 10px;
+	background-color: lightpink;
+}
+footer{
+	padding: 30px;
+	background-color: mediumpurple;
+	color: seashell;
+	font-size: 120%;
+	text-align: center;
+}
+.tainer{
+	max-width: 700px;
+	width: 100%;
+	padding: 25px 30px;
+	border-radius: 25px;
+	background-color: aliceblue;
+}
+.tainer .heading{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+.tainer .heading::before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: aliceblue;
+}
+form .card-detail .card-box{
+	width: calc(100% / 2 - 20px);
+	margin-bottom: 15px;
+}
+.card-detail .card-box .detail{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.card-detail .card-box input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px ;
+	transition: all 0.3s ease;
+}
+.card-detail .card-box input:focus,
+.card-detail .card-box input:valid{
+	border-color: lightgreen;
+}
+form .circal-form .circal-title{
+	font-size: 20px;
+	font-weight: 500;
+	border-bottom: 2px solid;
+}
+form .circal-form .category{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+form .button{
+	text-align: left;
+}
+form .button input{
+	padding: 10px 0 ;
+	margin-top: 10px;
+	height: 100%;
+	width: 50%;
+	outline: none;
+	color: lightgreen;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background-color: midnightblue;
+}
+form .button input:hover{
+	background-color: aliceblue;
+}
+
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: mediumpurple;
+  color: lightgreen;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 247px;
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  transform: ;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar{
+  position: fixed;
+  background: mediumpurple;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+#sidebar .title{
+  line-height: 65px;
+  text-align: center;
+  background: mediumpurple;
+  font-size: 25px;
+  font-weight: 600;
+  color: lightgreen;
+  border-bottom: 1px solid;
+}
+#sidebar .list-items{
+  position: relative;
+  background: mediumpurple;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+#sidebar .list-items li:first-child{
+  border-top: none;
+}
+#sidebar .list-items li a{
+  color: lightsalmon;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i{
+  margin-right: 20px;
+}
+#sidebar .list-items .icons{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sidebar .list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: lightsalmon;
+  background: mediumpurple;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover{
+  background: mediumpurple;
+}
+.list-items .icons a:first-child{
+  margin-left: 0px;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: lightsalmon;
+  z-index: -1;
+  width: 100%;
+  text-align: center;
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 40px;
+  font-weight: 700;
+}
